@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4700676F1F3FFF38003D9E0C /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4700676D1F3FFF38003D9E0C /* PopoverViewController.swift */; };
+		470067721F400597003D9E0C /* XBpopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470067711F400597003D9E0C /* XBpopViewController.swift */; };
 		47061E751F3B0F7A00C21CF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47061E741F3B0F7A00C21CF7 /* AppDelegate.swift */; };
 		47061E7A1F3B0F7A00C21CF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47061E781F3B0F7A00C21CF7 /* Main.storyboard */; };
 		47061E7C1F3B0F7A00C21CF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47061E7B1F3B0F7A00C21CF7 /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4700676D1F3FFF38003D9E0C /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		470067711F400597003D9E0C /* XBpopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XBpopViewController.swift; sourceTree = "<group>"; };
 		47061E711F3B0F7A00C21CF7 /* Swift_WB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_WB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47061E741F3B0F7A00C21CF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47061E791F3B0F7A00C21CF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -163,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				47FA00771F3B4DC6004DBF27 /* HomeViewController.swift */,
+				470067711F400597003D9E0C /* XBpopViewController.swift */,
+				4700676D1F3FFF38003D9E0C /* PopoverViewController.swift */,
 				47FFC0791F3F435700EFB4C9 /* HomeTitleButton.swift */,
 			);
 			path = "Home(首页)";
@@ -340,9 +346,11 @@
 				47FFC0781F3F3E9500EFB4C9 /* MainNavController.swift in Sources */,
 				47FA007E1F3B4DEE004DBF27 /* ProfireViewController.swift in Sources */,
 				47061E751F3B0F7A00C21CF7 /* AppDelegate.swift in Sources */,
+				470067721F400597003D9E0C /* XBpopViewController.swift in Sources */,
 				47FFC06C1F3F34D600EFB4C9 /* DiscoverViewController.swift in Sources */,
 				47FA00761F3B4DB1004DBF27 /* MainViewController.swift in Sources */,
 				47FFC06E1F3F34DF00EFB4C9 /* XBTabbar.swift in Sources */,
+				4700676F1F3FFF38003D9E0C /* PopoverViewController.swift in Sources */,
 				47FFC07A1F3F435700EFB4C9 /* HomeTitleButton.swift in Sources */,
 				47FA00781F3B4DC6004DBF27 /* HomeViewController.swift in Sources */,
 				47FA007C1F3B4DE4004DBF27 /* MessageViewController.swift in Sources */,

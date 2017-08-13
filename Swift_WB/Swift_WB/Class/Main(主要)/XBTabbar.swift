@@ -16,21 +16,23 @@ class XBTabbar: UITabBar {
 
     var delegateTabbar: XBTabBarPublicBtnDelegate?
     
-    lazy var publicBtn : UIButton = {
+     fileprivate lazy var publicBtn : UIButton = {
         let btn = UIButton();
 
         btn.setImage(UIImage(named: "tabbar_compose_icon_add"), for: UIControlState.normal);
         btn.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), for: UIControlState.highlighted);
         btn.setBackgroundImage(UIImage(named: "tabbar_compose_button"), for: UIControlState.normal);
         btn.setBackgroundImage(UIImage(named:"tabbar_compose_button_highlighted"), for: UIControlState.highlighted);
-        btn.addTarget(self, action:#selector(buttonAction(_:)), for: UIControlEvents.touchUpInside);
+        btn.addTarget(self, action:#selector(buttonAction(button:)), for: UIControlEvents.touchUpInside);
         self.addSubview(btn);
         return btn;
     }();
-    func buttonAction(_ button:UIButton){
+    
+    func buttonAction(button:UIButton){
         
         self.delegateTabbar?.tabbarpublicAction(button: button);
     }
+    
     override func layoutSubviews() {
         super.layoutSubviews();
 //        print(self.subviews as NSArray);

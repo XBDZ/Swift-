@@ -25,8 +25,6 @@ class MainViewController: UITabBarController ,XBTabBarPublicBtnDelegate{
         setValue(tabbar, forKey: "tabBar");
 
     }
-
-    
     func tabbarpublicAction(button: UIButton) {
         
     }
@@ -49,7 +47,6 @@ extension MainViewController {
     private func addChildViewController(children: UIViewController, title: String, Image: String, selectImage: String) {
         
         children.title = title;
-//        children.view.backgroundColor = UIColor.red;
         children.tabBarItem.selectedImage = UIImage(named: selectImage);
         children.tabBarItem.image = UIImage(named: Image);
         
