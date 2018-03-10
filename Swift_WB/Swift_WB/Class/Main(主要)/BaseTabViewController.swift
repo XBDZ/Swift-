@@ -1,28 +1,35 @@
+
 //
-//  ProfireViewController.swift
+//  BaseTabViewController.swift
 //  Swift_WB
 //
-//  Created by Mr Liu on 17/8/9.
-//  Copyright © 2017年 Mr Liu. All rights reserved.
+//  Created by Liu on 2018/3/10.
+//  Copyright © 2018年 Mr Liu. All rights reserved.
 //
 
 import UIKit
 
-class ProfireViewController: BaseTabViewController {
+class BaseTabViewController: UITableViewController {
 
+    var userLogin = false
+    
+    
+    override func loadView() {
+        
+          userLogin ? super.loadView() : setupVitorView()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+       view.backgroundColor = .white
+       
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    fileprivate func setupVitorView(){
+        let customView = VistorView()
+      
+        view = customView
     }
 
     // MARK: - Table view data source

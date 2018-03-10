@@ -8,16 +8,13 @@
 
 import UIKit
 
-class HomeViewController: UITableViewController {
+class HomeViewController: BaseTabViewController {
 
     fileprivate lazy var titleButton : HomeTitleButton = HomeTitleButton();
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.white;
-        
-    
         setupNavbar();
         
         

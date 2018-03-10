@@ -14,6 +14,9 @@
 		47061E7C1F3B0F7A00C21CF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47061E7B1F3B0F7A00C21CF7 /* Assets.xcassets */; };
 		47061E8A1F3B0F7A00C21CF7 /* Swift_WBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47061E891F3B0F7A00C21CF7 /* Swift_WBTests.swift */; };
 		47061E951F3B0F7A00C21CF7 /* Swift_WBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47061E941F3B0F7A00C21CF7 /* Swift_WBUITests.swift */; };
+		4739A95E2053B01F004D18DA /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4739A95D2053B01F004D18DA /* UIView+AutoLayout.swift */; };
+		4739A9602053B09B004D18DA /* VistorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4739A95F2053B09B004D18DA /* VistorView.swift */; };
+		4739A9622053B370004D18DA /* BaseTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4739A9612053B370004D18DA /* BaseTabViewController.swift */; };
 		47FA00761F3B4DB1004DBF27 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA00751F3B4DB1004DBF27 /* MainViewController.swift */; };
 		47FA00781F3B4DC6004DBF27 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA00771F3B4DC6004DBF27 /* HomeViewController.swift */; };
 		47FA007C1F3B4DE4004DBF27 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA007B1F3B4DE4004DBF27 /* MessageViewController.swift */; };
@@ -56,6 +59,9 @@
 		47061E901F3B0F7A00C21CF7 /* Swift_WBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift_WBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47061E941F3B0F7A00C21CF7 /* Swift_WBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_WBUITests.swift; sourceTree = "<group>"; };
 		47061E961F3B0F7A00C21CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4739A95D2053B01F004D18DA /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
+		4739A95F2053B09B004D18DA /* VistorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistorView.swift; sourceTree = "<group>"; };
+		4739A9612053B370004D18DA /* BaseTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabViewController.swift; sourceTree = "<group>"; };
 		47FA00751F3B4DB1004DBF27 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		47FA00771F3B4DC6004DBF27 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		47FA007B1F3B4DE4004DBF27 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 				47061EA51F3B104C00C21CF7 /* Main(主要) */,
 				47061EA61F3B104C00C21CF7 /* Message(消息) */,
 				47061EA71F3B104C00C21CF7 /* Profire */,
+				4739A95C2053B016004D18DA /* Tool */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -179,7 +186,9 @@
 			children = (
 				47FA00751F3B4DB1004DBF27 /* MainViewController.swift */,
 				47FFC0771F3F3E9500EFB4C9 /* MainNavController.swift */,
+				4739A9612053B370004D18DA /* BaseTabViewController.swift */,
 				47FFC06D1F3F34DF00EFB4C9 /* XBTabbar.swift */,
+				4739A95F2053B09B004D18DA /* VistorView.swift */,
 			);
 			path = "Main(主要)";
 			sourceTree = "<group>";
@@ -198,6 +207,14 @@
 				47FA007D1F3B4DEE004DBF27 /* ProfireViewController.swift */,
 			);
 			path = Profire;
+			sourceTree = "<group>";
+		};
+		4739A95C2053B016004D18DA /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				4739A95D2053B01F004D18DA /* UIView+AutoLayout.swift */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		47FFC0701F3F353300EFB4C9 /* Category */ = {
@@ -342,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4739A9622053B370004D18DA /* BaseTabViewController.swift in Sources */,
 				47FFC0761F3F3B7300EFB4C9 /* UIBarbuttonItem+Extension.swift in Sources */,
 				47FFC0781F3F3E9500EFB4C9 /* MainNavController.swift in Sources */,
 				47FA007E1F3B4DEE004DBF27 /* ProfireViewController.swift in Sources */,
@@ -349,6 +367,8 @@
 				470067721F400597003D9E0C /* XBpopViewController.swift in Sources */,
 				47FFC06C1F3F34D600EFB4C9 /* DiscoverViewController.swift in Sources */,
 				47FA00761F3B4DB1004DBF27 /* MainViewController.swift in Sources */,
+				4739A9602053B09B004D18DA /* VistorView.swift in Sources */,
+				4739A95E2053B01F004D18DA /* UIView+AutoLayout.swift in Sources */,
 				47FFC06E1F3F34DF00EFB4C9 /* XBTabbar.swift in Sources */,
 				4700676F1F3FFF38003D9E0C /* PopoverViewController.swift in Sources */,
 				47FFC07A1F3F435700EFB4C9 /* HomeTitleButton.swift in Sources */,
