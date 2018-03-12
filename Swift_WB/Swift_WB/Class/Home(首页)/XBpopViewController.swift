@@ -9,22 +9,50 @@
 import UIKit
 
 class XBpopViewController: UIPresentationController {
-    private lazy var hubView : UIView = UIView();
-    override func containerViewWillLayoutSubviews() {
-        super.containerViewWillLayoutSubviews();
-        presentedView?.frame = CGRect(x: 100, y: 55, width: 180, height: 250);
+    
+    override init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?) {
+        super.init(presentedViewController: presentedViewController, presenting: presentingViewController)
         
-        ///添加蒙板
-        hubView.backgroundColor = UIColor(white: 0.8, alpha: 0.3);
-        hubView.frame = containerView!.bounds;
-        containerView?.insertSubview(hubView, at: 0);
-        let tap = UITapGestureRecognizer(target: self, action: #selector(tap(tap:)));
-        containerView?.addGestureRecognizer(tap);
-       
+        print(presentedViewController)
+        
     }
- 
+    private lazy var hubView : UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor(white: 0.0, alpha: 0.2);
+        view.frame = UIScreen.main.bounds
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tap(tap:)));
+        view.addGestureRecognizer(tap);
+        
+        return view
+    }()
+        
+    
+    override func containerViewWillLayoutSubviews() {
+
+        //必须设置frame 否则盖住hub 无法响应手势
+        presentedView?.frame = CGRect(x: 100, y: 50, width: 180, height: 250);
+        ///添加蒙板
+        containerView?.insertSubview(hubView, at: 0);
+    }
+
     func tap(tap: UITapGestureRecognizer){
         presentedViewController.dismiss(animated: true, completion: nil);
     }
     
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

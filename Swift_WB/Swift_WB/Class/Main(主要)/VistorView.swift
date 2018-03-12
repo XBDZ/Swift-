@@ -8,8 +8,17 @@
 
 import UIKit
 
+protocol VistorViewDelegate : NSObjectProtocol {
+    
+    func visitorViewLogin()
+    func visitorViewRegister()
+}
+
 class VistorView: UIView {
 
+    weak var delegate : VistorViewDelegate?
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(iconView)
@@ -19,6 +28,7 @@ class VistorView: UIView {
         addSubview(regisBtn)
         addSubview(loginBtn)
         
+     
         
         backView.HB_AlignInner(type: .Center, referView: self, size: nil)
         backView.HB_Fill(referView: self)
@@ -36,27 +46,45 @@ class VistorView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+     func setupVisitorInfo(isHome: Bool, imageName: String, message: String)  {
+        iconView.isHidden = !isHome
+        messageLabel.text = message
+        homeIconView.image = UIImage(named: imageName)
+    
+        if isHome {
+            startAnimation()
+        }
+    }
+   private func startAnimation() {
+        let amima = CABasicAnimation(keyPath: "transform.rotation")
+        amima.toValue = 2 * Double.pi
+        amima.duration = 20
+        amima.repeatCount = MAXFLOAT
+        amima.isRemovedOnCompletion = false
+    
+        iconView.layer.add(amima, forKey: nil)
+    }
     
     
-    lazy var backView : UIImageView = {
+  fileprivate  lazy var backView : UIImageView = {
         let iv = UIImageView(image: UIImage(named:"visitordiscover_feed_mask_smallicon"))
         
         return iv
     }()
     
-    lazy var iconView : UIImageView = {
+   fileprivate lazy var iconView : UIImageView = {
         let iv = UIImageView(image: UIImage(named:"visitordiscover_feed_image_smallicon"))
         
         return iv
     }()
     
-    lazy var homeIconView : UIImageView = {
+   fileprivate lazy var homeIconView : UIImageView = {
         let iv = UIImageView(image: UIImage(named:"visitordiscover_feed_image_house"))
         
         return iv
     }()
     
-    lazy var messageLabel : UILabel = {
+   fileprivate lazy var messageLabel : UILabel = {
         let lb = UILabel()
         lb.text = "关注一些人，回这里看看呦什么惊喜"
         lb.textColor = .darkGray
@@ -66,20 +94,55 @@ class VistorView: UIView {
         return lb
     }()
     
-    lazy var regisBtn : UIButton = {
+   fileprivate lazy var regisBtn : UIButton = {
         let btn = UIButton(type: .custom)
         btn.setTitle("注册", for: UIControlState())
         btn.setBackgroundImage(UIImage(named:"common_button_white_disable"), for: UIControlState())
         btn.setTitleColor(.orange, for: UIControlState())
+     btn.addTarget(self, action: #selector(regisAction), for: UIControlEvents.touchUpInside)
         return btn
     }()
     
-    lazy var loginBtn : UIButton = {
+   fileprivate lazy var loginBtn : UIButton = {
         let btn = UIButton(type: .custom)
         btn.setTitle("登录", for: UIControlState())
         btn.setBackgroundImage(UIImage(named:"common_button_white_disable"), for: UIControlState())
         btn.setTitleColor(.orange, for: UIControlState())
+    btn.addTarget(self, action: #selector(loginAction), for: UIControlEvents.touchUpInside)
+
         return btn
     }()
-
+    
+   /// 获取当前view的控制器
+    func viewController () -> (UIViewController){
+         //1.通过响应者链关系，取得此视图的下一个响应者
+         var next:UIResponder?
+         next = self.next!
+         while next != nil {
+         //2.判断响应者对象是否是视图控制器类型
+         if ((next as?UIViewController) != nil) {
+         return (next as! UIViewController)
+         
+         }else {
+            next = next?.next
+         }
+      }
+         return UIViewController()
+    }
+    
+    func loginAction() {
+        
+//        let login = LoginViewController()
+//        viewController().navigationController?.pushViewController(login, animated: true)
+        delegate?.visitorViewLogin()
+        
+        
+    }
+    func regisAction() {
+          delegate?.visitorViewRegister()
+    }
+    
+    
+    
+    
 }

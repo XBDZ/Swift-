@@ -9,14 +9,14 @@
 import UIKit
 
 extension UIBarButtonItem{
-    convenience init(imageName : String, selectImageName : String) {
-//        self.init()
-//        [UIImage imageName:strig];
+    convenience init(imageName : String, selectImageName : String ,targate: AnyObject, action: Selector ,title: String ) {
+
         let btn = UIButton();
         
         btn.setImage(UIImage(named: imageName), for: UIControlState.normal);
         btn.setImage(UIImage(named:selectImageName), for: UIControlState.highlighted);
-        
+        btn.setTitle(title, for: UIControlState.normal)
+        btn.addTarget(targate, action: action , for: UIControlEvents.touchUpInside)
         btn.sizeToFit();
         
         self.init(customView:btn);

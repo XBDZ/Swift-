@@ -27,7 +27,7 @@ class HomeTitleButton: UIButton {
     override func layoutSubviews() {
         super.layoutSubviews();
         
-        titleLabel!.frame.origin.x = 0;
-        imageView!.frame.origin.x = titleLabel!.frame.size.width + 5;
+        titleLabel?.frame.origin.x = 0;
+        imageView?.frame.origin.x = titleLabel!.frame.size.width + 5;
     }
 }

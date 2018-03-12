@@ -9,9 +9,10 @@
 
 import UIKit
 
-class BaseTabViewController: UITableViewController {
+class BaseTabViewController: UITableViewController, VistorViewDelegate {
 
-    var userLogin = false
+    var userLogin = true
+    var visitorView : VistorView?
     
     
     override func loadView() {
@@ -27,9 +28,17 @@ class BaseTabViewController: UITableViewController {
     }
 
     fileprivate func setupVitorView(){
-        let customView = VistorView()
-      
-        view = customView
+        visitorView = VistorView()
+        visitorView?.delegate = self
+        view = visitorView
+    }
+    
+    func visitorViewLogin() {
+        
+        print(#function)
+    }
+    func visitorViewRegister() {
+        
     }
 
     // MARK: - Table view data source

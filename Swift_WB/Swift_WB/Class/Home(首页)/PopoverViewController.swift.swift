@@ -9,21 +9,21 @@
 import UIKit
 
 class PopoverViewController: UIViewController {
-    
+
     fileprivate lazy var backImage : UIImageView = UIImageView();
     lazy var tableView : UITableView = UITableView();
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setUpView();
-        
+
+       setUpView();
+
     }
 }
 //MARK:- 添加子控件
 extension PopoverViewController {
     fileprivate func setUpView(){
-        
-        backImage.frame = CGRect(x: 0, y: 0, width:180, height: 250);
+
+        backImage.frame = CGRect(x: 0, y: 0, width:view.frame.size.width, height: view.frame.size.height);
         backImage.image = UIImage(named: "popover_background");
         view.addSubview(backImage);
         
@@ -32,7 +32,6 @@ extension PopoverViewController {
         backImage.addSubview(tableView);
     }
 }
-
 
 
 
