@@ -14,6 +14,7 @@
 		47061E8A1F3B0F7A00C21CF7 /* Swift_WBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47061E891F3B0F7A00C21CF7 /* Swift_WBTests.swift */; };
 		47061E951F3B0F7A00C21CF7 /* Swift_WBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47061E941F3B0F7A00C21CF7 /* Swift_WBUITests.swift */; };
 		47303C0C2056075A00C70BBE /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47303C0A2056075A00C70BBE /* PopoverViewController.swift */; };
+		4736EFDD2057DE310056D284 /* PopAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4736EFDC2057DE310056D284 /* PopAnimation.swift */; };
 		4739A95E2053B01F004D18DA /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4739A95D2053B01F004D18DA /* UIView+AutoLayout.swift */; };
 		4739A9602053B09B004D18DA /* VistorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4739A95F2053B09B004D18DA /* VistorView.swift */; };
 		4739A9622053B370004D18DA /* BaseTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4739A9612053B370004D18DA /* BaseTabViewController.swift */; };
@@ -60,6 +61,7 @@
 		47061E941F3B0F7A00C21CF7 /* Swift_WBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_WBUITests.swift; sourceTree = "<group>"; };
 		47061E961F3B0F7A00C21CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47303C0A2056075A00C70BBE /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		4736EFDC2057DE310056D284 /* PopAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnimation.swift; sourceTree = "<group>"; };
 		4739A95D2053B01F004D18DA /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
 		4739A95F2053B09B004D18DA /* VistorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistorView.swift; sourceTree = "<group>"; };
 		4739A9612053B370004D18DA /* BaseTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				47FA00771F3B4DC6004DBF27 /* HomeViewController.swift */,
 				470067711F400597003D9E0C /* XBpopViewController.swift */,
 				47303C0A2056075A00C70BBE /* PopoverViewController.swift */,
+				4736EFDC2057DE310056D284 /* PopAnimation.swift */,
 				47FFC0791F3F435700EFB4C9 /* HomeTitleButton.swift */,
 			);
 			path = "Home(首页)";
@@ -363,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47303C0C2056075A00C70BBE /* PopoverViewController.swift in Sources */,
+				4736EFDD2057DE310056D284 /* PopAnimation.swift in Sources */,
 				4739A9622053B370004D18DA /* BaseTabViewController.swift in Sources */,
 				47FFC0761F3F3B7300EFB4C9 /* UIBarbuttonItem+Extension.swift in Sources */,
 				47FFC0781F3F3E9500EFB4C9 /* MainNavController.swift in Sources */,
