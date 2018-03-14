@@ -28,8 +28,8 @@ class HomeViewController: BaseTabViewController {
 //MARK:- 设置导航栏
 extension HomeViewController {
    fileprivate  func setupNavbar (){
-    self.navigationItem.leftBarButtonItem = UIBarButtonItem(imageName : "navigationbar_friendattention", selectImageName : "navigationbar_friendattention_highlighted" ,targate: self, action: #selector(leftAction) ,title: "")
-    self.navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "navigationbar_pop", selectImageName: "navigationbar_pop_highlighted", targate: self, action: .leftBarAction, title: "")
+    self.navigationItem.leftBarButtonItem = UIBarButtonItem(imageName : "navigationbar_friendattention", selectImageName : "navigationbar_friendattention_highlighted" ,targate: self, action: .leftBarAction ,title: "")
+    self.navigationItem.rightBarButtonItem = UIBarButtonItem(imageName: "navigationbar_pop", selectImageName: "navigationbar_pop_highlighted", targate: self, action: .rightAction, title: "")
     
         titleButton.setTitle("asdas", for: .normal);
         titleButton.addTarget(self, action: #selector(titleBtnAction(sender:)), for: .touchUpInside);
@@ -39,7 +39,9 @@ extension HomeViewController {
         
     }
     func homeAction()  {
-        
+        let codeVC = QRCodeViewController()
+        let nav = MainNavController.init(rootViewController: codeVC)
+        self.present(nav, animated: true, completion: nil);
     }
     
    @objc fileprivate func titleBtnAction(sender : HomeTitleButton){
@@ -54,7 +56,8 @@ extension HomeViewController {
 }
 
 private extension Selector {
-    static let leftBarAction = #selector(HomeViewController.homeAction)
+    static let leftBarAction = #selector(HomeViewController.leftAction)
+    static let rightAction = #selector(HomeViewController.homeAction)
     
 }
 

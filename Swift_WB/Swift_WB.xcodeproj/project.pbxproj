@@ -13,6 +13,7 @@
 		47061E7C1F3B0F7A00C21CF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47061E7B1F3B0F7A00C21CF7 /* Assets.xcassets */; };
 		47061E8A1F3B0F7A00C21CF7 /* Swift_WBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47061E891F3B0F7A00C21CF7 /* Swift_WBTests.swift */; };
 		47061E951F3B0F7A00C21CF7 /* Swift_WBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47061E941F3B0F7A00C21CF7 /* Swift_WBUITests.swift */; };
+		472CEE0D2058EE48000F5847 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472CEE0C2058EE48000F5847 /* QRCodeViewController.swift */; };
 		47303C0C2056075A00C70BBE /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47303C0A2056075A00C70BBE /* PopoverViewController.swift */; };
 		4736EFDD2057DE310056D284 /* PopAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4736EFDC2057DE310056D284 /* PopAnimation.swift */; };
 		4739A95E2053B01F004D18DA /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4739A95D2053B01F004D18DA /* UIView+AutoLayout.swift */; };
@@ -60,6 +61,7 @@
 		47061E901F3B0F7A00C21CF7 /* Swift_WBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift_WBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47061E941F3B0F7A00C21CF7 /* Swift_WBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_WBUITests.swift; sourceTree = "<group>"; };
 		47061E961F3B0F7A00C21CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		472CEE0C2058EE48000F5847 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		47303C0A2056075A00C70BBE /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		4736EFDC2057DE310056D284 /* PopAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnimation.swift; sourceTree = "<group>"; };
 		4739A95D2053B01F004D18DA /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				47FA00771F3B4DC6004DBF27 /* HomeViewController.swift */,
+				472CEE0C2058EE48000F5847 /* QRCodeViewController.swift */,
 				470067711F400597003D9E0C /* XBpopViewController.swift */,
 				47303C0A2056075A00C70BBE /* PopoverViewController.swift */,
 				4736EFDC2057DE310056D284 /* PopAnimation.swift */,
@@ -371,6 +374,7 @@
 				47FFC0761F3F3B7300EFB4C9 /* UIBarbuttonItem+Extension.swift in Sources */,
 				47FFC0781F3F3E9500EFB4C9 /* MainNavController.swift in Sources */,
 				47FA007E1F3B4DEE004DBF27 /* ProfireViewController.swift in Sources */,
+				472CEE0D2058EE48000F5847 /* QRCodeViewController.swift in Sources */,
 				47061E751F3B0F7A00C21CF7 /* AppDelegate.swift in Sources */,
 				470067721F400597003D9E0C /* XBpopViewController.swift in Sources */,
 				47FFC06C1F3F34D600EFB4C9 /* DiscoverViewController.swift in Sources */,
