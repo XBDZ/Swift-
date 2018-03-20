@@ -302,8 +302,9 @@
 				TargetAttributes = {
 					47061E701F3B0F7A00C21CF7 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4M4UR2H528;
 						LastSwiftMigration = 0800;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					47061E841F3B0F7A00C21CF7 = {
 						CreatedOnToolsVersion = 8.0;
@@ -531,11 +532,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4M4UR2H528;
 				INFOPLIST_FILE = Swift_WB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-23.Swift-WB";
+				PRODUCT_BUNDLE_IDENTIFIER = zhhpEnterpriseID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5b7b7fbf-34f1-4216-9a7b-41163895000c";
+				PROVISIONING_PROFILE_SPECIFIER = DevelopmentProfile;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -548,11 +553,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4M4UR2H528;
 				INFOPLIST_FILE = Swift_WB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-23.Swift-WB";
+				PRODUCT_BUNDLE_IDENTIFIER = zhhpEnterpriseID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5b7b7fbf-34f1-4216-9a7b-41163895000c";
+				PROVISIONING_PROFILE_SPECIFIER = DevelopmentProfile;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
