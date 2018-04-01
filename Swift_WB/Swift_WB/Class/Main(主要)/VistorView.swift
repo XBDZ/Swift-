@@ -131,15 +131,11 @@ class VistorView: UIView {
     }
     
     func loginAction() {
-        
-//        let login = LoginViewController()
-//        viewController().navigationController?.pushViewController(login, animated: true)
         delegate?.visitorViewLogin()
-        
-        
     }
+    
     func regisAction() {
-          delegate?.visitorViewRegister()
+        delegate?.visitorViewRegister()
     }
     
     
