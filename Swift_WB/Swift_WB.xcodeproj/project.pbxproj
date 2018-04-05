@@ -13,6 +13,7 @@
 		47061E7C1F3B0F7A00C21CF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47061E7B1F3B0F7A00C21CF7 /* Assets.xcassets */; };
 		47061E8A1F3B0F7A00C21CF7 /* Swift_WBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47061E891F3B0F7A00C21CF7 /* Swift_WBTests.swift */; };
 		47061E951F3B0F7A00C21CF7 /* Swift_WBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47061E941F3B0F7A00C21CF7 /* Swift_WBUITests.swift */; };
+		47062C95207126B900CE2333 /* NewfeatureCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47062C94207126B900CE2333 /* NewfeatureCollectionViewController.swift */; };
 		472CEE0D2058EE48000F5847 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472CEE0C2058EE48000F5847 /* QRCodeViewController.swift */; };
 		473001C3206A05B500CF8F29 /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473001C2206A05B500CF8F29 /* OAuthViewController.swift */; };
 		47303C0C2056075A00C70BBE /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47303C0A2056075A00C70BBE /* PopoverViewController.swift */; };
@@ -70,6 +71,7 @@
 		47061E901F3B0F7A00C21CF7 /* Swift_WBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift_WBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47061E941F3B0F7A00C21CF7 /* Swift_WBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_WBUITests.swift; sourceTree = "<group>"; };
 		47061E961F3B0F7A00C21CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47062C94207126B900CE2333 /* NewfeatureCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewfeatureCollectionViewController.swift; sourceTree = "<group>"; };
 		472CEE0C2058EE48000F5847 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		473001C2206A05B500CF8F29 /* OAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
 		47303C0A2056075A00C70BBE /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				4736EFDC2057DE310056D284 /* PopAnimation.swift */,
 				473001C2206A05B500CF8F29 /* OAuthViewController.swift */,
 				473AB71E206FCB8D00FA7031 /* UserAccount.swift */,
+				47062C94207126B900CE2333 /* NewfeatureCollectionViewController.swift */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -606,6 +609,7 @@
 				47FA00781F3B4DC6004DBF27 /* HomeViewController.swift in Sources */,
 				47FA007C1F3B4DE4004DBF27 /* MessageViewController.swift in Sources */,
 				473AB71F206FCB8D00FA7031 /* UserAccount.swift in Sources */,
+				47062C95207126B900CE2333 /* NewfeatureCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -74,7 +74,12 @@ extension OAuthViewController : UIWebViewDelegate
         }, success: { (_, JSON) in
           let account =  UserAccount.init(dict: JSON as! [String : AnyObject])
            print(account)
-           account.saveAccount()
+            account.loadUserInfo(finish: { (account, error) in
+                if account != nil{
+                    
+                    account!.saveAccount()
+                }
+            })
             
         }, failure: { (_, error) in
             

@@ -20,8 +20,7 @@ class BaseTabViewController: UITableViewController, VistorViewDelegate {
     }
     
     func visitorViewRegister() {
-        let account: UserAccount = UserAccount.loadAccount()!
-        print("******-------\(String(describing: account))")
+        
     }
     
 
