@@ -17,8 +17,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
       
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = NewfeatureCollectionViewController()
+        window?.rootViewController = MainViewController()
         window?.makeKeyAndVisible()
+        
+        //输出bug信息
+        print("系统bug日志记录－－－－－－－－－－－－－－－－－－－－－\(String(describing: UserDefaults.standard.value(forKey: "ERROR_MESSAGE")))")
+        NSSetUncaughtExceptionHandler { exception in
+            var message = exception.callStackSymbols
+            message.removeAll()
+            message.append("----错误理由---：\(exception.reason!)")
+            message.append("---错误详细信息---：\(exception.callStackSymbols)")
+            UserDefaults.standard.set(message, forKey: "ERROR_MESSAGE")
+            UserDefaults.standard.synchronize()
+            print("系统bug日志记录－－－－－－－－－－－－－－－－－－－－－\n\(message)")
+        }
   
         return true
     }

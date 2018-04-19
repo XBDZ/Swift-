@@ -8,7 +8,15 @@
 
 import UIKit
 
+let HomeViewControllerCell = "HomeViewControllerCell"
+
 class HomeViewController: BaseTabViewController {
+    
+    var dataArray: [Status]?{
+        didSet{
+           tableView.reloadData()
+        }
+    }
     
     fileprivate  lazy var titleButton : HomeTitleButton = HomeTitleButton();
     fileprivate lazy var popAnimation : PopAnimation = {
@@ -22,7 +30,22 @@ class HomeViewController: BaseTabViewController {
         if !userLogin {
             visitorView?.setupVisitorInfo(isHome: true, imageName: "visitordiscover_feed_image_house", message: "关注一些人，回这里看看有什么惊喜")
         }
+        tableView?.register(HomeStatusCell.self, forCellReuseIdentifier: HomeViewControllerCell)
+        
+        tableView?.estimatedRowHeight = 200
+        tableView?.rowHeight = UITableViewAutomaticDimension
+        tableView?.separatorColor = .none
+        
         setupNavbar();
+        loadData()
+    }
+    func loadData () {
+        Status.loadStatuses { (models, error) in
+            if error != nil{
+                return
+            }
+            self.dataArray = models
+        }
     }
 }
 //MARK:- 设置导航栏
@@ -52,7 +75,22 @@ extension HomeViewController {
         popView.modalPresentationStyle = .custom;
         present(popView, animated: true, completion: nil);
     }
+}
 
+extension HomeViewController{
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataArray?.count ?? 0
+    }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: HomeViewControllerCell, for: indexPath) as! HomeStatusCell
+        let status = dataArray![indexPath.row]
+        cell.status = status
+        return cell
+    }
+//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 100.0
+//    }
+   
 }
 
 private extension Selector {

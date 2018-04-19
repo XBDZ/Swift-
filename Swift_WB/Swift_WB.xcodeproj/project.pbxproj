@@ -25,10 +25,14 @@
 		4739A9642054DD25004D18DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4739A9632054DD25004D18DA /* LoginViewController.swift */; };
 		473AB71D206FBF3D00FA7031 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473AB71C206FBF3D00FA7031 /* NetworkTools.swift */; };
 		473AB71F206FCB8D00FA7031 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473AB71E206FCB8D00FA7031 /* UserAccount.swift */; };
+		4778140120776B2A009E67BB /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4778140020776B2A009E67BB /* Status.swift */; };
+		47DEE2032079DF1300F98494 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DEE2022079DF1300F98494 /* User.swift */; };
+		47F705E02084652A00A34CB6 /* NSDate+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F705DF2084652A00A34CB6 /* NSDate+Category.swift */; };
 		47FA00761F3B4DB1004DBF27 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA00751F3B4DB1004DBF27 /* MainViewController.swift */; };
 		47FA00781F3B4DC6004DBF27 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA00771F3B4DC6004DBF27 /* HomeViewController.swift */; };
 		47FA007C1F3B4DE4004DBF27 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA007B1F3B4DE4004DBF27 /* MessageViewController.swift */; };
 		47FA007E1F3B4DEE004DBF27 /* ProfireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA007D1F3B4DEE004DBF27 /* ProfireViewController.swift */; };
+		47FCA7D1207B2ACB00A1045F /* HomeStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FCA7D0207B2ACB00A1045F /* HomeStatusCell.swift */; };
 		47FFC06C1F3F34D600EFB4C9 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FFC06B1F3F34D600EFB4C9 /* DiscoverViewController.swift */; };
 		47FFC06E1F3F34DF00EFB4C9 /* XBTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FFC06D1F3F34DF00EFB4C9 /* XBTabbar.swift */; };
 		47FFC0761F3F3B7300EFB4C9 /* UIBarbuttonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FFC0751F3F3B7300EFB4C9 /* UIBarbuttonItem+Extension.swift */; };
@@ -83,10 +87,14 @@
 		4739A9632054DD25004D18DA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		473AB71C206FBF3D00FA7031 /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		473AB71E206FCB8D00FA7031 /* UserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		4778140020776B2A009E67BB /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		47DEE2022079DF1300F98494 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		47F705DF2084652A00A34CB6 /* NSDate+Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+Category.swift"; sourceTree = "<group>"; };
 		47FA00751F3B4DB1004DBF27 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		47FA00771F3B4DC6004DBF27 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		47FA007B1F3B4DE4004DBF27 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		47FA007D1F3B4DEE004DBF27 /* ProfireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfireViewController.swift; sourceTree = "<group>"; };
+		47FCA7D0207B2ACB00A1045F /* HomeStatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatusCell.swift; sourceTree = "<group>"; };
 		47FFC06B1F3F34D600EFB4C9 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		47FFC06D1F3F34DF00EFB4C9 /* XBTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XBTabbar.swift; sourceTree = "<group>"; };
 		47FFC0751F3F3B7300EFB4C9 /* UIBarbuttonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarbuttonItem+Extension.swift"; sourceTree = "<group>"; };
@@ -229,14 +237,15 @@
 		47061EA41F3B104C00C21CF7 /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				477813FF20776A0D009E67BB /* Model */,
 				47FA00771F3B4DC6004DBF27 /* HomeViewController.swift */,
+				47FCA7D0207B2ACB00A1045F /* HomeStatusCell.swift */,
 				47FFC0791F3F435700EFB4C9 /* HomeTitleButton.swift */,
 				472CEE0C2058EE48000F5847 /* QRCodeViewController.swift */,
 				470067711F400597003D9E0C /* XBpopViewController.swift */,
 				47303C0A2056075A00C70BBE /* PopoverViewController.swift */,
 				4736EFDC2057DE310056D284 /* PopAnimation.swift */,
 				473001C2206A05B500CF8F29 /* OAuthViewController.swift */,
-				473AB71E206FCB8D00FA7031 /* UserAccount.swift */,
 				47062C94207126B900CE2333 /* NewfeatureCollectionViewController.swift */,
 			);
 			path = "Home(首页)";
@@ -277,8 +286,19 @@
 				4739A95D2053B01F004D18DA /* UIView+AutoLayout.swift */,
 				473AB71C206FBF3D00FA7031 /* NetworkTools.swift */,
 				4731BC2E20709A7C009BF995 /* String+Category.swift */,
+				47F705DF2084652A00A34CB6 /* NSDate+Category.swift */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		477813FF20776A0D009E67BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				473AB71E206FCB8D00FA7031 /* UserAccount.swift */,
+				4778140020776B2A009E67BB /* Status.swift */,
+				47DEE2022079DF1300F98494 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		47FFC0701F3F353300EFB4C9 /* Category */ = {
@@ -590,7 +610,9 @@
 				47303C0C2056075A00C70BBE /* PopoverViewController.swift in Sources */,
 				4736EFDD2057DE310056D284 /* PopAnimation.swift in Sources */,
 				4739A9622053B370004D18DA /* BaseTabViewController.swift in Sources */,
+				47DEE2032079DF1300F98494 /* User.swift in Sources */,
 				47FFC0761F3F3B7300EFB4C9 /* UIBarbuttonItem+Extension.swift in Sources */,
+				47F705E02084652A00A34CB6 /* NSDate+Category.swift in Sources */,
 				47FFC0781F3F3E9500EFB4C9 /* MainNavController.swift in Sources */,
 				47FA007E1F3B4DEE004DBF27 /* ProfireViewController.swift in Sources */,
 				472CEE0D2058EE48000F5847 /* QRCodeViewController.swift in Sources */,
@@ -598,9 +620,11 @@
 				470067721F400597003D9E0C /* XBpopViewController.swift in Sources */,
 				47FFC06C1F3F34D600EFB4C9 /* DiscoverViewController.swift in Sources */,
 				47FA00761F3B4DB1004DBF27 /* MainViewController.swift in Sources */,
+				4778140120776B2A009E67BB /* Status.swift in Sources */,
 				4739A9602053B09B004D18DA /* VistorView.swift in Sources */,
 				473AB71D206FBF3D00FA7031 /* NetworkTools.swift in Sources */,
 				473001C3206A05B500CF8F29 /* OAuthViewController.swift in Sources */,
+				47FCA7D1207B2ACB00A1045F /* HomeStatusCell.swift in Sources */,
 				4731BC2F20709A7C009BF995 /* String+Category.swift in Sources */,
 				4739A95E2053B01F004D18DA /* UIView+AutoLayout.swift in Sources */,
 				47FFC06E1F3F34DF00EFB4C9 /* XBTabbar.swift in Sources */,

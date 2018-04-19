@@ -39,7 +39,6 @@ class XBpopViewController: UIPresentationController {
     func tap(tap: UITapGestureRecognizer){
         presentedViewController.dismiss(animated: true, completion: nil);
     }
- 
 }
 
 

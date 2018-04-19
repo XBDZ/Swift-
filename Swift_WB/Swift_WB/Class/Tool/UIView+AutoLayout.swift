@@ -193,7 +193,7 @@ extension UIView {
         for i in 1..<views.count {
             let subView = views[i]
             cons += subView.HB_sizeConstraints(referView:firstView)
-            subView.HB_AlignHorizontal(type: HB_AlignType.TopRight, referView: preView, size: nil, offset: CGPoint(x: insets.right, y: 0))
+            subView.HB_AlignHorizontal(type: HB_AlignType.CenterRight, referView: preView, size: nil, offset: CGPoint(x: insets.right, y: 0))
             preView = subView
         }
         
